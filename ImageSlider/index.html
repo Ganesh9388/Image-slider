@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Image Slider | Experience the Flow</title>
+    <meta name="description" content="A premium, responsive image slider featuring smooth transitions and elegant design.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="slider-container">
+        <header class="slider-header">
+            <h1>Visual Journey</h1>
+            <p>Immerse yourself in high-definition beauty</p>
+        </header>
+
+        <section class="slider-wrapper" id="sliderWrapper" aria-label="Image Slider">
+            <div class="slides" id="slides">
+                <!-- Slides will be injected or managed by JS -->
+                <article class="slide active">
+                    <img src="slide1.png" alt="Minimalist Architecture at Sunset">
+                    <div class="caption">
+                        <span class="category">Architecture</span>
+                        <h2>Skyward Reflections</h2>
+                    </div>
+                </article>
+                <article class="slide">
+                    <img src="slide2.png" alt="Misty Forest Morning">
+                    <div class="caption">
+                        <span class="category">Nature</span>
+                        <h2>Emerald Mist</h2>
+                    </div>
+                </article>
+                <article class="slide">
+                    <img src="slide3.png" alt="Vibrant Neon Cityscape">
+                    <div class="caption">
+                        <span class="category">Urban</span>
+                        <h2>Neon Pulse</h2>
+                    </div>
+                </article>
+            </div>
+
+            <nav class="slider-nav">
+                <button class="nav-btn prev" id="prevBtn" aria-label="Previous Slide">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </button>
+                <button class="nav-btn next" id="nextBtn" aria-label="Next Slide">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </button>
+            </nav>
+
+            <div class="slider-indicators" id="indicators">
+                <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+                <button class="dot" data-index="1" aria-label="Slide 2"></button>
+                <button class="dot" data-index="2" aria-label="Slide 3"></button>
+            </div>
+        </section>
+
+        <div class="slider-progress-bar">
+            <div class="progress" id="progressBar"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
